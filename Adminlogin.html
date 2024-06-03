@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Adminlogin.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Home</title>
+</head>
+<body>
+
+    <header class="header">
+    <nav class="navbar navbar-style">
+        <div class="container1">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img  class="logo" src="logo.png">
+                
+
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="micon">
+             <ul class="nav navbar-nav navbar-right">
+                <li><a href="Index.html"><font color="blue"><b>Home</b></font></a></li>
+                <li><a href=""><font color="blue"><b>Guest</b></font></a></li>
+             </ul>
+            </div>
+        </div>
+
+    </nav>    
+    </header>
+                
+
+    <div class="bg-img" data-closable >
+        
+        <div class="content">
+            <button class="close-button" onclick="location.href = 'Index.html'" type="button" data-close><span aria-hidden="true">&times;</span></button>
+           <!-- <div class="headerA"> -->    <header>Admin Login</header> <!--</div>-->
+           
+           <form action="#">
+              <div class="field">
+                 <span class="fa fa-user"></span>
+                 <input type="email" class="email" required placeholder="Email">
+              </div>
+              <div class="field space">
+                 <span class="fa fa-lock"></span>
+                 <input type="password" class="pass-key" required placeholder="Password">
+                 <span class="show">SHOW</span>
+              </div>
+              <div class="pass">
+                 <a href="#">Forgot Password?</a>
+              </div>
+              <div class="field">
+                 <input type="button" class="submit-btn" value="LOGIN">
+              </div>
+           </form>
+           <!-- <div class="login">
+              Or login with
+           </div> -->
+        
+           <div class="signup">
+              Don't have account?
+              <a href="#">Signup Now</a>
+           </div>
+        </div>
+     </div>
+     
+     <script>
+        const pass_field = document.querySelector('.pass-key');
+        const showBtn = document.querySelector('.show');
+        showBtn.addEventListener('click', function(){
+         if(pass_field.type === "password"){
+           pass_field.type = "text";
+           showBtn.textContent = "HIDE";
+           showBtn.style.color = "#3498db";
+         }else{
+           pass_field.type = "password";
+           showBtn.textContent = "SHOW";
+           showBtn.style.color = "#222";
+         }
+        });
+        const email = document.querySelector('.email');
+        console.log(email.value);
+        const password = document.querySelector('.pass-key');
+        console.log(password.value);
+        const submitBtn = document.querySelector('.submit-btn');
+      //   let sucessful= false;
+        submitBtn.addEventListener('click', function(){
+         // console.log(email.value);
+         // console.log(password.value);
+         if(email.value==="priyanshuyadav2711@gmail.com" && password.value==="priyanshu"){
+            // alert("Sucessful");
+            // sucessful= true;
+            window.location.href="Adminhome.html";  
+            return false;
+      }
+         else{
+            alert("Email or Password is Incorrect");
+         }
+        });
+      // document.querySelector('.submit-btn').addEventListener("click", myFunction);  
+      // function myFunction() {  
+      //    console.log("priyanshu");
+      //    window.location.href="Adminhome.html";  
+      //    return false;
+        
+      // }
+        
+     </script>
+    
+    
+
+</body>
+</html>

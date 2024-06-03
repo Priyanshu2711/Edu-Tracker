@@ -1,0 +1,112 @@
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+.header
+{
+    height: 0px;
+}
+/* body
+  {
+    background-image: url("Graduation.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  } */
+.navbar-style
+{
+    background-color: black;
+    box-shadow: 0 5px 10px #220d0d;
+    text-transform: uppercase;
+    
+}
+.logo
+{
+    height: 60px;
+    padding-left: 10px;
+    float:left;
+    
+}
+.icon-bar
+{
+    background: darkorange;
+}
+.bgimage
+{
+    /* background-image: url("Graduation.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    height: 10px;
+    width: 100%;
+    /* padding-top: 0px; */
+    /* background-size: 1600px 650px; */
+}
+.foot
+{
+    
+    background-color: black;
+    padding-bottom: 10px;
+}
+.description {
+    background: black;
+
+    padding-top: 750px;
+    padding-bottom: 10px;
+}
+
+.description .col {
+    display: inline-block;
+    width: 30%;
+}
+table.center {
+    margin-left: auto; 
+    margin-right: auto;
+  }
+.button {
+    border: none;
+    color: white;
+    padding: 16px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: rgb(16, 236, 244); 
+    color: black; 
+    border: 2px solid #050505;
+    
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .button1:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  }
+  
+  .button2 {
+    background-color: rgb(16, 236, 244); 
+    color: black; 
+    border: 2px solid #000000;
+  }
+  
+  .button2:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .button2:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  }
+
+ 
+  
+  
